@@ -1,0 +1,162 @@
+body {
+    background: #999999;
+}
+
+tr.tab:hover { background-color: white;}
+
+.login {
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+table.content {
+    border-spacing: 0px;
+    border: 1px solid #000000;
+}
+table.serv {
+    border: 1px solid #000000;
+}
+
+.servtop {
+    border-bottom: 1px solid black;
+}
+
+.servbot {
+    border-top: 1px solid black;
+}
+
+.allt {
+    border: 0px;
+}
+
+a {
+    color: #000000;
+}
+
+input.text {
+    align: center;
+    border: 1px solid #000000;
+}
+
+.imgdiv {
+    cursor: pointer;
+    width: 260px;
+    background: #FFFFFF;
+    border: 1px solid #ff4a4a;
+    padding: 3;
+}
+
+div.set {
+    width: 95%;
+}
+
+th.sortable {
+    color: #666;
+    cursor: pointer;
+    text-decoration: underline;
+}
+th.sortable:hover { color: black; }
+th.sorted-asc, th.sorted-desc  { color: black; }
+
+#background {
+    display: none;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#login {
+    display: none;
+    position: absolute;
+    opacity 1;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    background-color: #CC9966;
+    border: 7px solid #663300;
+    top: 40%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+    z-index: 2;
+    padding: 5px;
+}
+
+#zag {
+    width: 100%;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+input.login {
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 2px;
+}
+
+#rez {
+    color: #FF0000;
+}
+tr {
+    height: 30px;
+}
+tr.green,td.green {
+    background-image: url('/img/cntrgreen.gif');
+    background-repeat: repeat-x;
+}
+tr.red {
+    background-image: url('/img/cntrred.gif');
+    background-repeat: repeat-x;
+}
+tr.darkred {
+    background-image: url('/img/cntrdarkred.gif');
+    background-repeat: repeat-x;
+}
+tr.silver {
+    background-image: url('/img/cntrsilver.gif');
+    background-repeat: repeat-x;
+}
+tr.yellow {
+    background-image: url('/img/cntryellow.gif');
+    background-repeat: repeat-x;
+}
+tr.blue {
+    background-image: url('/img/cntrblue.gif');
+    background-repeat: repeat-x;
+}
+
+.cntrth {
+    background-image: url('/img/cntrth.gif');
+    background-repeat: repeat-x;
+    height: 31px;
+    border: 0;
+    color: #ffffff;
+}
+
+.tbl {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.addc {
+    border: 0px;
+    height: 48px;
+    background-image: url('/img/addc.gif');
+    background-repeat:repeat-x;
+}
+
+.focus {
+    border: 0px;
+    height: 48px;
+    background-image: url('/img/addc.hover.gif');
+    background-repeat:repeat-x;
+
+}
