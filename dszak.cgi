@@ -7,9 +7,12 @@ $q = new CGI;
 $q->header(-charset=>'UTF-8');
 #$url=$q->url();
 #------------------------------------
-my $mysql_table = '';
-my $mysql_user = 'root';
-my $mysql_pass = '';
+use Config::IniFiles;
+my $cfg = Config::IniFiles->new( -file => "config.ini" );
+
+my $mysql_table = $cfg->val( 'database', 'database' );
+my $mysql_user  = $cfg->val( 'database', 'user' );
+my $mysql_pass  = $cfg->val( 'database', 'pass' );
 
 #Завантаження зображення товару на сервер
 #my $images_dirf = '/var/www/sklad/htdocs/images';

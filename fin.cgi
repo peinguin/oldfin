@@ -19,9 +19,12 @@ $view=$q->param('view');
 #$dbh = DBI->connect("DBI:$sql_type:database=$sql_dbname;host=$sql_host", $sql_login, $sql_passwd);
 #$dbh->do("SET NAMES utf8");
 
-my $mysql_table = 'fin';
-my $mysql_user = 'fin';
-my $mysql_pass = 'fin';
+use Config::IniFiles;
+my $cfg = Config::IniFiles->new( -file => "config.ini" );
+
+my $mysql_table = $cfg->val( 'database', 'database' );
+my $mysql_user  = $cfg->val( 'database', 'user' );
+my $mysql_pass  = $cfg->val( 'database', 'pass' );
 
 #my ($idnom,$sk);
 

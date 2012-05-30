@@ -10,9 +10,12 @@ $q->header(-charset=>'UTF-8');
 $url=$q->url();
 $view=$q->param('view');
 #------------------------------------
-my $mysql_table = '';
-my $mysql_user = 'root';
-my $mysql_pass = '';
+use Config::IniFiles;
+my $cfg = Config::IniFiles->new( -file => "config.ini" );
+
+my $mysql_table = $cfg->val( 'database', 'database' );
+my $mysql_user  = $cfg->val( 'database', 'user' );
+my $mysql_pass  = $cfg->val( 'database', 'pass' );
 #my $mysql_pass = '';
 
 #Завантаження зображення товару на сервер

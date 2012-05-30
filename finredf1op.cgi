@@ -8,9 +8,12 @@ $q->header(-charset=>'UTF-8');
 
 use DBI;
 
-my $mysql_table = '';
-my $mysql_user = 'root';
-my $mysql_pass = '';
+use Config::IniFiles;
+my $cfg = Config::IniFiles->new( -file => "config.ini" );
+
+my $mysql_table = $cfg->val( 'database', 'database' );
+my $mysql_user  = $cfg->val( 'database', 'user' );
+my $mysql_pass  = $cfg->val( 'database', 'pass' );
 
 
 $dbhr = DBI->connect("DBI:mysql:$mysql_table:localhost",$mysql_user,$mysql_pass,{RaiseError=>1});
