@@ -10,12 +10,6 @@ use DBI;
 
 $view=$q->param('view');
 
-#$sql_type="mysql";
-#$sql_host="localhost";
-#$sql_login="root";
-#$sql_passwd="w9jmEo3B";
-#$sql_dbname="zal";
-
 #$dbh = DBI->connect("DBI:$sql_type:database=$sql_dbname;host=$sql_host", $sql_login, $sql_passwd);
 #$dbh->do("SET NAMES utf8");
 
